@@ -305,8 +305,8 @@ export default function SolutionDetail() {
     setStatus('sending');
 
     emailjs.send(
-      'service_i3gents',
-      'template_a2at9yj',
+      'service_sorf4gl',
+      'template_g7x8wvu',
       {
         from_name: formData.name,
         from_email: formData.email,
@@ -314,10 +314,10 @@ export default function SolutionDetail() {
         organization: formData.organization,
         message: `[Start Free Trial – ${solution?.title}]\n\nBrief Requirement: ${formData.requirement}`,
         reply_to: formData.email,
-        to_name: 'Harsh',
-        to_email: 'harsh1582@gmail.com'
+        to_name: 'Pradeep Singh',
+        to_email: 'sigmachainai@gmail.com'
       },
-      'Aq22ose6lGD2zXT-W'
+      '5fcK7TUYOgTcy-8AK'
     ).then(() => {
       setStatus('sent');
       setTimeout(closeModal, 3000);
