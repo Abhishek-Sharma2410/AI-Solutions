@@ -1,4 +1,5 @@
 import { Github, Twitter, Linkedin, Mail } from 'lucide-react';
+import logo from '../assets/reverse_logo.png';
 
 export default function Footer() {
   return (
@@ -6,8 +7,9 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto">
         <div className="grid md:grid-cols-3 gap-12 mb-12">
           <div>
-            <div className="text-2xl font-bold text-white mb-4">
-              AI<span className="text-blue-500">Solutions</span>
+            <div className="flex items-center space-x-2 text-2xl font-bold text-white mb-4">
+              <img src={logo} alt="logo" className="h-16 w-auto" />
+              SigmaChain<span className="text-blue-500">AI</span>
             </div>
             <p className="text-gray-400 mb-6">
               Empowering businesses with cutting-edge AI technology for a smarter future.
@@ -62,7 +64,7 @@ export default function Footer() {
         <div className="border-t border-gray-800 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-gray-400 text-sm">
-              © 2026 AISolutions. All rights reserved.
+              © 2026 SigmaChainAI. All rights reserved.
             </p>
             {/* <div className="flex items-center space-x-6 mt-4 md:mt-0">
               <a href="#" className="text-gray-400 hover:text-blue-500 text-sm transition-colors">

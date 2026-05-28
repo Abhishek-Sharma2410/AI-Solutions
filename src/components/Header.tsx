@@ -1,6 +1,7 @@
 import { Menu, X, Calendar, MessageSquare } from 'lucide-react';
 import { useState } from 'react';
 import emailjs from '@emailjs/browser';
+import logo from '../assets/logo.png';
 
 interface FormData {
   name: string;
@@ -83,8 +84,9 @@ export default function Header() {
         <nav className="max-w-7xl mx-auto px-6 py-4">
           <div className="flex items-center justify-between">
             <div className="flex items-center space-x-12">
-              <a href="#" className="text-2xl font-bold text-gray-900">
-                AI<span className="text-blue-600">Solutions</span>
+              <a href="#" className="flex items-center space-x-2 text-2xl font-bold text-gray-900">
+                <img src={logo} alt="logo" className="h-14 w-auto" />
+                SigmaChain<span className="text-blue-600">AI</span>
               </a>
               <div className="hidden md:flex items-center space-x-8">
                 <a href="#solutions" className="text-gray-700 hover:text-blue-600 transition-colors">Solutions</a>
